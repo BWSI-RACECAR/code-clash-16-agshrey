@@ -52,7 +52,7 @@ class Solution:
         # return type: int (shortest path as an int)
 
         # TODO: Write code below to return an int with the solution to the prompt
-        graph["Finished"] = {}
+        graph["Finish"] = {}
         unvisited_nodes = []
         nodes = []
 
@@ -88,7 +88,7 @@ class Solution:
             
             unvisited_nodes.remove(current_min_node)
         
-        return shortest_path["Start"]
+        return previous_nodes, shortest_path
 
 def main():
     tc1 = Solution()
